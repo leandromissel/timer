@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(89,89,89);
+    background: linear-gradient(90deg, rgba(89,89,89,1) 0%, rgba(61,61,61,1) 50%, rgba(0,0,0,1) 100%); 
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    background-color: rgb(44, 44, 44);
+    margin: 10rem 35rem;
+    padding: 3rem;
+    border-radius: 2rem;
+    border: 3px solid rgb(240, 240, 240);
+}
+
+h1, p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: darkgray;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 6rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    color: rgb(44, 44, 44);
+}
+
+button:hover {
+    background-color: black;
+    color: darkgray;
+}
+
+.pausado {
+    color: rgb(126, 47, 47);
+}
+
+@media (max-width: 1180px) {
+    html {
+        font-size: 67.5%;
+    }
+
+    .container {
+        margin: 12rem 3.5rem;
+    }
+
+    .buttons {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .pausado .pausado {
+        font-size: 5rem;
+    }
+}
